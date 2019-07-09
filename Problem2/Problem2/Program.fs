@@ -16,7 +16,7 @@ let naiveProd (l:int list) =
     Naive version without division allowed
     Complexity O(n*(n-1)) = O(n²):
     - O(n) for loop on the n numbers
-    - O(n-1) for the inner loop (reduce before, and reduce after)
+    - O(n-1) for the inner loop (reduce left, then reduce right)
     Space O(2n)
 *)
 let naiveWithoutDivision (l:int list) =
