@@ -2,23 +2,26 @@
 
 open System
 
-let cons (a:int) (b:int) =
+let cons a b =
     let pair f =
         f a b
     pair
 ;;
 
-let car (a:int) (b:int) =
-    a
+let car pair =
+    let car_aux a b =
+        a
+    pair car_aux
 ;;
 
-let cdr (a:int) (b:int) =
-    b
+let cdr pair =
+    let car_aux a b =
+        b
+    pair car_aux
 ;;
 
 [<EntryPoint>]
 let main argv =
-    let input = cons 3 4
-    printfn "car(cons(3, 4)) = %d, cdr(cons(3, 4)) = %d" (input car) (input cdr)
+    printfn "car(cons(3, 4)) = %d, cdr(cons(3, 4)) = %d" (car (cons 3 4)) (cdr (cons 3 4))
     let k = Console.ReadKey()
     0 // return an integer exit code
