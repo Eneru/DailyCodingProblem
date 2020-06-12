@@ -7,6 +7,8 @@ You shouldn't read those before you solve it on your own.
 * Easy
     - [x] Problem 1
     - [x] Problem 1, bonus (optimized using set)
+	- [x] Problem 8
+	- [x] Problem 16 (using double linked list to have O(1) on record and O(N/2) on get_last)
 * Medium
     - [x] Problem 3 (naive solution, without tail recursion, the stack may overflow)
 	- [x] Problem 5 (naive solution)
